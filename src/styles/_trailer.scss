@@ -1,0 +1,14 @@
+@use 'variaveis';
+
+.trailer {
+
+    &__titulo {
+        margin-bottom: 1vw;
+    }
+
+    &__video {
+        width: 100%;
+        border-radius: 6px;
+        box-shadow: 0 0 15px 3px rgba(212,125,25,0.2);
+    }
+}
