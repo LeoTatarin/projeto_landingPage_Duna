@@ -1,0 +1,82 @@
+@use 'variaveis';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8vw;
+    margin-bottom: 10px;
+
+    @media (max-width: 750px) {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__empresa {
+        display: flex;
+        align-items: center;
+        
+        @media (max-width: 750px) {
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 24px;
+        }
+
+        &__icone {
+            img {
+                width: 36px;
+            }
+        }
+
+        &__texto {
+            margin-left: 14px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 750px) {
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 24px;
+        }
+        
+        &__cinema {
+            padding-right: 20px;
+            border-right: solid 2px black;
+
+            &__titulo {
+                padding-bottom: 4px;
+
+                h4 {
+                    font-family: variaveis.$fonteTextos;
+                    font-size: 16px;
+                }
+            } 
+
+            &__icones {
+                cursor: pointer;
+            }
+        }
+
+        &__warner-play {
+            padding-left: 20px;
+
+            &__titulo {
+                padding-bottom: 4px;
+
+                h4 {
+                    font-family: variaveis.$fonteTextos;
+                    font-size: 16px;
+                }
+            }
+
+            &__icones {
+                cursor: pointer;
+            }
+
+        }
+    }
+}
